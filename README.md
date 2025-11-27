@@ -1,39 +1,42 @@
-# Practical Work #2
-## Variant 3: Score Calculation System
+# Практическая работа №2
+## Вариант 3: Система подсчета баллов
 
-### Task:
-The user sequentially enters three integers (points for three game levels). Use Convert.ToInt32() to convert input strings. The program should calculate the total score and average score (real number). Demonstrate boxing of the total score (int type) into an object type and subsequent unboxing back to int before output.
+### Задача:
+Пользователь последовательно вводит три целых числа (очки за три уровня игры). Используйте функцию Convert.ToInt32() для преобразования входных строк. Программа должна вычислить общий счёт и средний счёт (вещественное число). Продемонстрируйте упаковку общего счёта (тип int) в тип object и последующую распаковку обратно в int перед выводом.
 
-### Implemented Features:
+### Реализованные функции:
 
-1. **Input with exception handling:**
-   - Used Convert.ToInt32() for string to number conversion
-   - Handled exceptions: FormatException, OverflowException
-   - Implemented retry on errors
+1. **Ввод с обработкой исключений:**
+   - Используется Convert.ToInt32() для преобразования строки в число
+   - Обработанные исключения: FormatException, OverflowException
+   - Реализован повтор при ошибках
 
-2. **Calculations:**
-   - Total score calculation (sum)
-   - Average score calculation (real number)
-
-3. **Boxing and Unboxing:**
+2. **Расчеты:**
+   - Подсчет общего балла (сумма)
+   - Расчет среднего балла (действительное число)
+     
+3. **Упаковка и распаковка:**
    - Boxing: int ? object
    - Unboxing: object ? int
-   - InvalidCastException demonstration
+   - Демонстрация InvalidCastException
 
-4. **Exception Handling:**
-   - FormatException - invalid number format
-   - OverflowException - number out of int range
-   - InvalidCastException - type casting error
+4. **Обработка исключений:**
+   - FormatException — недопустимый числовой формат
+   - OverflowException — число выходит за пределы диапазона int
+   - InvalidCastException — ошибка приведения типа
 
-### Key Type Conversion Aspects:
+### Ключевые аспекты преобразования типов:
 
-- **Convert.ToInt32()** - converts string to int with exception generation
-- **Boxing** - value type to reference type conversion (int ? object)
-- **Unboxing** - reference type to value type conversion (object ? int)
-- **Explicit casting** - (double)totalScore for real division
+- **Convert.ToInt32()** - преобразует строку в целое число с генерацией исключения
+- **Boxing** - преобразование типа значения в ссылочный тип (int ? object)
+- **Unboxing** - преобразование ссылочного типа в тип значения (объект ? int)
+- **Explicit casting** - (double)totalScore для вещественного деления
 
-### Testing Examples:
 
-**Normal scenario:**
+### Примеры тестирования:
 
-**Error scenario:**
+**Обычный сценарий:**
+<img width="1576" height="215" alt="{0F6E4ECD-851D-48DF-A30D-F1A12785DAFC}" src="https://github.com/user-attachments/assets/521ec197-bd9a-4590-98eb-b8dd83f85454" />
+
+**Сценарий ошибки:**
+<img width="1497" height="267" alt="{62105FA3-170E-4EAF-8127-64B449A5CFD1}" src="https://github.com/user-attachments/assets/392c0e2f-850b-4375-9d6b-8fd568430524" />
